@@ -48,7 +48,8 @@
     {
       "group": "Guides",
       "pages": [
-        "guides/setting-up-automation"
+        "guides/setting-up-automation",
+        "guides/react-email"
       ]
     },
     {
