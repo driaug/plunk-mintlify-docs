@@ -43,13 +43,26 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction"]
+      "pages": ["introduction", "faq"]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "guides/setting-up-automation"
+      ]
     },
     {
       "group": "Working with contacts",
       "pages": [
         "working-with-contacts/metadata",
         "working-with-contacts/segmentation"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/zapier",
+        "integrations/bubble"
       ]
     },
     {
