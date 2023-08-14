@@ -53,6 +53,12 @@
       ]
     },
     {
+      "group": "Configuration",
+      "pages": [
+        "configuration/domain"
+      ]
+    },
+    {
       "group": "Working with contacts",
       "pages": [
         "working-with-contacts/metadata",
