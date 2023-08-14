@@ -11,6 +11,8 @@ When [tracking events](/api-reference/actions/track), you can attach metadata to
 ## Adding metadata
 In this example, we will track the event `project-created` and attach the name of the project to the contact.
 
+<Warning>Metadata keys are case-sensitive!</Warning>
+
 ```javascript
 await fetch('https://api.useplunk.com/v1/track', {
     method: "POST",
@@ -27,6 +29,8 @@ await fetch('https://api.useplunk.com/v1/track', {
     })
 });
 ```
+
+The project key will be added to the contact and will be available to use in the dashboard. Keys that do not exist will be created, and keys that do exist will be updated.
 
 ## Using metadata in templates
 You will often want to use metadata in your templates. Personalizing your messages is a great way to increase engagement and conversion rates.
