@@ -1,15 +1,15 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Plunk",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#9563FF",
-    "light": "#AE87FF",
-    "dark": "#0D001D",
+    "primary": "#262626",
+    "light": "#F5F5F5",
+    "dark": "#262626",
     "background": {
       "dark": "#090014"
     },
@@ -18,15 +18,9 @@
       "to": "#9563FF"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.useplunk.com"
   },
   "tabs": [
     {
@@ -36,47 +30,63 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "discord",
+      "url": "https://useplunk.com/discord"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://useplunk.com/blog"
     }
   ],
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "pages": ["introduction"]
     },
     {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      "group": "Working with contacts",
+      "pages": [
+        "working-with-contacts/metadata",
+        "working-with-contacts/segmentation"
+      ]
     },
     {
       "group": "API Documentation",
       "pages": ["api-reference/authentication"]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Automations",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "api-reference/actions/track"
+      ]
+    },
+    {
+      "group": "Transactional",
+      "pages": [
+        "api-reference/transactional/send"
+      ]
+    },
+    {
+      "group": "Contacts",
+      "pages": [
+        "api-reference/contacts/id",
+        "api-reference/contacts/get",
+        "api-reference/contacts/count",
+        "api-reference/contacts/subscribe",
+        "api-reference/contacts/unsubscribe",
+        "api-reference/contacts/delete"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/useplunk",
+    "github": "https://github.com/useplunk"
+  },
+  "api": {
+    "auth": {
+      "method": "bearer"
+    }
   }
 }

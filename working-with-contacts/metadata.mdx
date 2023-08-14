@@ -1,0 +1,29 @@
+---
+title: 'Metadata'
+description: 'Attach metadata to your contacts and use it'
+icon: 'database'
+---
+
+You will often want to attach metadata to your contacts. For example, you might want to store their name, address, or the name of their company.
+
+When [tracking events](/api-reference/actions/track), you can attach metadata to the contact. This metadata will be available to view in the dashboard, can be used to [segment contacts](/working-with-contacts/segmentation), and can be used to [personalize messages](/api-reference/actions/personalize).
+
+## Adding metadata
+In this example, we will track the event `project-created` and attach the name of the project to the contact.
+
+```javascript
+await fetch('https://api.useplunk.com/v1/track', {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer <API_KEY>"
+    },
+    body: JSON.stringify({
+        "event": "new-project",
+        "email": "hello@useplunk.com",
+        "data": {
+            "project": "Plunk"
+        }
+    })
+});
+```

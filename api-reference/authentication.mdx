@@ -1,22 +1,18 @@
 ---
 title: "Authentication"
-description: "Example overview page before API endpoints"
+description: "How to authenticate requests to the API"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et eros iaculis tortor dapibus cursus. Curabitur quis sapien nec tortor dictum gravida.
+Each request to the API must be authenticated with a valid API token. You can find both your public and secret API key in the [API settings](https://app.useplunk.com/settings/api) of your project.
 
 ```bash
-'Authorization': 'Token <team_token>'
+'Authorization': 'Bearer <team_token>'
 ```
 
-## API Tokens
+## Public API Key
 
-Nullam convallis mauris at nunc consectetur, ac imperdiet leo rutrum. Maecenas cursus purus a pellentesque blandit. Pellentesque vitae lacinia libero, non mollis metus.
+Your public API key should be used in environments like the browser or mobile apps. Its only permission is to track events.
 
-Nam id ullamcorper urna, at rutrum enim. [Maecenas vulputate](/introduction) vehicula libero, vitae sodales augue pretium nec. Quisque a magna tempor, semper risus vel, fermentum nunc. Pellentesque fermentum interdum ex, eu convallis massa blandit sed. Aliquam bibendum ipsum vel laoreet auctor.
+## Secret API Key
 
-### Permissions
-
-Etiam lobortis ut odio ut fermentum. Nunc odio velit, sollicitudin at consectetur id, tristique eget turpis. Aliquam at risus vitae dolor sodales venenatis. In hac habitasse platea dictumst.
-
-Aenean consequat diam eget mollis fermentum. [Quisque eu malesuada](/introduction) felis, non dignissim libero.
+Your secret API key should be used in environments like your backend server. It has full access to your project, including the ability to delete data and extract emails.
