@@ -55,7 +55,8 @@
     {
       "group": "Configuration",
       "pages": [
-        "configuration/domain"
+        "configuration/domain",
+        "configuration/import"
       ]
     },
     {
