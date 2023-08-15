@@ -43,7 +43,7 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "faq"]
+      "pages": ["introduction", "overview", "faq"]
     },
     {
       "group": "Guides",
