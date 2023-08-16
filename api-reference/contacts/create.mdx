@@ -4,6 +4,8 @@ api: "POST https://api.useplunk.com/v1/contacts"
 description: "Create a new contact"
 ---
 
+In most cases, it is recommended to use the [track](/api-reference/actions/track) endpoint to create a contact.
+When a new contact tracks an event Plunk will automatically create the contact, thus saving you an API call.
 
 ### Body
 <ParamField body="email" type="string" placeholder={'hello@useplunk.com'} required>
