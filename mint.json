@@ -111,5 +111,10 @@
     "auth": {
       "method": "bearer"
     }
+  },
+  "analytics": {
+    "pirsch": {
+      "id": "3EeqIyq5f0ImhcwOHA7jnHXhozyZmrrL"
+    }
   }
 }
