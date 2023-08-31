@@ -64,7 +64,8 @@
       "group": "Working with contacts",
       "pages": [
         "working-with-contacts/metadata",
-        "working-with-contacts/segmentation"
+        "working-with-contacts/segmentation",
+        "working-with-contacts/subscribe-state"
       ]
     },
     {
