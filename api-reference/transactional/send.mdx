@@ -14,6 +14,9 @@ description: "Send emails with a single API call."
 <ParamField body="body" placeholder="Your first email" type="string" required >
     The body of the email.
 </ParamField>
+<ParamField body="subscribed" placeholder="false" type="boolean" default={"false"}>
+    Should the contact be subscribed
+</ParamField>
 <ParamField body="name" placeholder="Plunk" type="string">
     Override the name of the sender. Defaults to the project name.
 </ParamField>
