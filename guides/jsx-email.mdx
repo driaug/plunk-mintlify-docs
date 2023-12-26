@@ -25,11 +25,10 @@ Use JSX email components to create a new email template. You can find plenty of 
 import * as React from "react";
 import { Section, Text, Button } from "jsx-email";
 
-export const Email = ({ name }) => {
+export const Email = ({ url }) => {
   return (
     <Section>
-      <Text>Hello {name}</Text>
-      <Button href="https://useplunk.com">Click me!</Button>
+      <Button href={url}>Click me!</Button>
     </Section>
   );
 };
@@ -45,7 +44,7 @@ import { Email } from "./email";
 
 const plunk = new Plunk(process.env.PLUNK_API_KEY);
 
-const body = render(<Email name={"Bruce Wayne"} />);
+const body = render(<Email url={"https://useplunk.com"} />);
 
 plunk.emails.send({
   to: "hello@useplunk.com",

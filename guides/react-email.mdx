@@ -32,7 +32,7 @@ export default function Email(props) {
 
   return (
     <Html lang="en">
-      <Button href={url}>Click me</Button>
+      <Button href={url}>Click me!</Button>
     </Html>
   );
 }
@@ -48,7 +48,7 @@ import { Email } from './email';
 
 const plunk = new Plunk("<API_KEY>");
 
-const body = render(<Email url="https://example.com" />);
+const body = render(<Email url={"https://useplunk.com"} />);
 
 const success = await plunk.emails.send({
     to: "hello@useplunk.com",
