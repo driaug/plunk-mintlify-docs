@@ -50,6 +50,7 @@
       "pages": [
         "guides/setting-up-automation",
         "guides/react-email",
+        "guides/jsx-email",
         "guides/double-opt-in"
       ]
     },
