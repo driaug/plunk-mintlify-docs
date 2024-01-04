@@ -6,8 +6,9 @@ icon: 'mailbox'
 
 [JSX email](https://jsx.email) enables you to build emails with a delightful developer experience. You can use the Plunk Node.js SDK with JSX email.
 
+# Transactional emails
+When using JSX Email, you can use the Plunk Node.js SDK. Install it with your favorite package manager:
 ## Install dependencies
-When using React Email, you can use the Plunk Node.js SDK. Install it with your favorite package manager:
 
 <CodeGroup>
     ```sh npm
@@ -52,3 +53,8 @@ plunk.emails.send({
   body,
 });
 ```
+
+# Actions
+Plunk [actions](/overview#actions) support JSX Email as well. You cannot use JSX Email directly, and will have to compile your JSX Email component to HTML first.
+
+Once you have your HTML, you can paste it into the Plunk template editor and use it as a template for your actions.

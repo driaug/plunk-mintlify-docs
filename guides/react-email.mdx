@@ -7,8 +7,10 @@ icon: 'mailbox'
 [React Email](https://react.email) took the React community by storm. It's a great way to build transactional email templates with React.
 It is fully compatible with Plunk, and works out of the box. In this guide, we'll show you how to get started with React Email and Plunk.
 
+# Transactional emails
+When using Plunk's [transactional email API](/api-reference/transactional), you can use React Email to build your email templates directly in your code.
 ## Install dependencies
-When using React Email, you can use the Plunk Node.js SDK. Install it with your favorite package manager:
+You can use the Plunk Node.js SDK. Install it with your favorite package manager:
 
 <CodeGroup>
 ```sh npm
@@ -56,3 +58,8 @@ const success = await plunk.emails.send({
     body,
 });
 ```
+
+# Actions
+Plunk [actions](/overview#actions) support React Email as well. You cannot use React Email directly, and will have to compile your React Email component to HTML first.
+
+Once you have your HTML, you can paste it into the Plunk template editor and use it as a template for your actions.
