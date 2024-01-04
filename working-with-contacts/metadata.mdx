@@ -35,7 +35,25 @@ The project key will be added to the contact and will be available to use in the
 ## Using metadata in templates
 You will often want to use metadata in your templates. Personalizing your messages is a great way to increase engagement and conversion rates.
 
-When you are creating a new template, you can use the `{{data}}` variable to access the metadata. For example, if you wanted to use the name of the project in your template, you could use `{{project}}`.
+When you are creating a new template, you can use the `{{data}}` syntax to access the metadata. For example, if you wanted to use the name of the project in your template, you could use `{{project}}`.
+
+## Using metadata in transactional emails
+You can also use metadata in your [transactional emails](/api-reference/transactional). Use the `{{data}}` syntax to access the metadata. For example, if you wanted to use the name of the project in your email, you could use `{{project}}`.
+
+```javascript
+await fetch('https://api.useplunk.com/v1/send', {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer <API_KEY>"
+    },
+    body: JSON.stringify({
+        "to": "hello@useplunk.com",
+        "subject": "Welcome {{project}}",
+        "body": "Welcome to Plunk, {{project}}!"
+    })
+});
+```
 
 ## Non-persistent metadata
 By default, metadata is persistent. This means that if you track an event and attach metadata, that data will be stored on the contact and will be available to use in the future.
